@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="64dp">
+<ImageView android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:id="@+id/avatar"
+           android:layout_marginLeft="2dp"
+           android:src="@drawable/daijia_head_placehoder"/>
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:layout_toRightOf="@id/avatar">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="好友"
+                  android:textSize="18sp"
+                  android:textStyle="bold"
+                  android:textColor="@color/black"
+                  android:layout_alignParentLeft="true"
+                  android:layout_alignParentTop="true"
+                  android:id="@+id/friend_name"
+                />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textSize="12sp"
+                  android:text="好友"
+                  android:textColor="@color/job_gray"
+                  android:layout_alignParentLeft="true"
+                  android:layout_alignParentBottom="true"
+                />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                  android:layout_alignParentTop="true"
+                  android:text="16:07"
+                />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                   android:layout_alignParentBottom="true"
+                   android:src="@drawable/bd_wallet_pp_icon"
+                />
+    </RelativeLayout>
+
+</RelativeLayout>

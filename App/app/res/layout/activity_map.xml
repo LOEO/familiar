@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"/>
+    <include layout="@layout/common_searchbox_home" android:id="@+id/search_box"/>
+    <ImageButton android:layout_width="40dp"
+                 android:layout_height="40dp"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentBottom="true"
+                 android:layout_marginLeft="4dp"
+                 android:layout_marginBottom="64dp"
+                 android:background="@drawable/main_locate_btn"
+                 android:src="@drawable/main_icon_location"
+                 android:id="@+id/get_location"
+                 android:text="定位"/>
+    <ImageButton android:layout_width="40dp"
+                 android:layout_height="40dp"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="4dp"
+                 android:background="@drawable/main_top_btn"
+                 android:src="@drawable/main_zoomin"
+                 android:layout_above="@+id/zoom_out_btn"
+                 android:id="@+id/zoom_in_btn"/>
+    <ImageButton android:layout_width="40dp"
+                 android:layout_height="40dp"
+                 android:layout_marginRight="4dp"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentBottom="true"
+                 android:layout_marginBottom="64dp"
+                 android:background="@drawable/main_bottom_btn"
+                 android:src="@drawable/main_zoomout"
+                 android:id="@+id/zoom_out_btn"/>
+    <ImageButton android:layout_height="wrap_content" android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+                 android:layout_below="@+id/search_box"
+                 android:layout_marginTop="10dp"
+                 android:background="@drawable/transparent"
+                 android:src="@drawable/track_icon_timeline_foot"
+                 android:id="@+id/go"
+            />
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:background="@drawable/main_bottombar_background"
+                  android:layout_marginLeft="4dp"
+                  android:layout_marginRight="4dp"
+                  android:layout_alignParentBottom="true"
+                  android:layout_marginBottom="4dp"
+            >
+        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:clickable="true"
+                        android:background="@drawable/main_bl_button_background" android:layout_weight="1">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:text="@string/near_by"
+                      android:textStyle="bold"
+                      android:gravity="center"
+                      android:id="@+id/gj"
+                      android:drawableLeft="@drawable/main_icon_nearby"
+                    />
+        </RelativeLayout>
+        <include layout="@layout/common_v_line"/>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:clickable="true"
+                        android:background="@drawable/main_bm_button_background" android:layout_weight="1">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:text="@string/rotate"
+                      android:textStyle="bold"
+                      android:gravity="center"
+                      android:id="@+id/ls"
+                      android:drawableLeft="@drawable/main_icon_route"
+                    />
+        </RelativeLayout>
+        <include layout="@layout/common_v_line"/>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:clickable="true"
+                        android:background="@drawable/main_bm_button_background" android:layout_weight="1">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:text="@string/nav"
+                      android:textStyle="bold"
+                      android:gravity="center"
+                      android:id="@+id/cx"
+                      android:drawableLeft="@drawable/main_icon_nav"
+                    />
+        </RelativeLayout>
+        <include layout="@layout/common_v_line"/>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:clickable="true"
+                        android:background="@drawable/main_br_button_background" android:layout_weight="1">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:text="@string/mine"
+                      android:textStyle="bold"
+                      android:gravity="center"
+                      android:id="@+id/wd"
+                      android:drawableLeft="@drawable/main_icon_mine"
+                    />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

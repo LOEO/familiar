@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="activity_main_bottom_view">#ff1e90e3</item>
+    <item type="drawable" name="activity_main_bottom_view_press">#ff7cb5ec</item>
+    <item type="drawable" name="bgcolor">#fff7f7f7</item>
+    <item type="drawable" name="ceimorg_item">#fff7f7f7</item>
+    <item type="drawable" name="ceimselectorg_item_rl">#00000000</item>
+    <item type="drawable" name="ceimselectorg_item_rl_press">#a8ebebeb</item>
+    <item type="drawable" name="contact_focu">#ff016fa4</item>
+    <item type="drawable" name="ebexplandable_list_item_bg_draw">#ffe5e6e7</item>
+    <item type="drawable" name="guide_start_bgpress">#ffde8f00</item>
+    <item type="drawable" name="jggroup_filelsit_item_background">#ffdddde0</item>
+    <item type="drawable" name="jggroup_filelsit_item_bg">#ff1fbaf3</item>
+    <item type="drawable" name="jggroup_filelsit_item_bgpress">#ff1ba2d4</item>
+    <item type="drawable" name="jggroup_filelsit_item_progress">#ffa6a6a6</item>
+    <item type="drawable" name="jggroup_filelsit_item_progress_offset">#ff66cc33</item>
+    <item type="drawable" name="jggroup_filelsit_item_progress_pause_offset">#ffb6b6b6</item>
+    <item type="drawable" name="jingoal_comm_horgrid_item_press">#ffebebeb</item>
+    <item type="drawable" name="jingoal_highset_press">#ff016fa4</item>
+    <item type="drawable" name="jingoal_login_bg">#fff2f2f2</item>
+    <item type="drawable" name="jingoal_menu_drawable">#ffffffff</item>
+    <item type="drawable" name="jingoal_smoothpb_bg">#ff99daf2</item>
+    <item type="drawable" name="navigation_bg">#ff298cd3</item>
+    <item type="drawable" name="review_title_bg">#ff383838</item>
+    <item type="drawable" name="set_list_item_bg">#ff016fa4</item>
+    <item type="drawable" name="translucent_bg">#66000000</item>
+    <item type="drawable" name="translucent_comm_bg">#d4000000</item>
+    <item type="drawable" name="transparent_draw">#00000000</item>
+    <item type="drawable" name="vcard_press">#ff016fa4</item>
+    <item type="drawable" name="white_bg">#ffffffff</item>
+    <item type="drawable" name="white_draw">#ffffffff</item>
+</resources>

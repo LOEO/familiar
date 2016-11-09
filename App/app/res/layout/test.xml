@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#FFFFFF" android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@+id/srollView" android:fadingEdge="none" android:overScrollMode="never"
+                android:layout_height="match_parent" android:layout_width="match_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical"
+                      android:layout_height="match_parent" android:layout_width="match_parent">
+            <View android:background="#00FF00" android:layout_width="fill_parent" android:layout_height="0.5dip"
+                  android:layout_marginTop="4dp"/>
+            <RelativeLayout android:id="@+id/hset_rl_account" android:background="#FF0000"
+                            android:layout_height="56.0dip" android:layout_width="match_parent">
+                <ImageView android:id="@+id/hset_imageview_icon" android:background="#FF0000"
+                           android:layout_width="42.0dip" android:layout_height="42.0dip"
+                           android:layout_marginLeft="4dp" android:layout_centerVertical="true"/>
+                <com.jingoal.mobile.android.baseui.JVIEW_TextView android:textSize="17.0dip"
+                                                                  android:textColor="@color/black"
+                                                                  android:id="@+id/hset_textview_name"
+                                                                  android:layout_width="wrap_content"
+                                                                  android:layout_marginLeft="12.0dip"
+                                                                  android:layout_marginTop="5.0dip" android:text=""
+                                                                  android:singleLine="true"
+                                                                  android:layout_toRightOf="@+id/hset_imageview_icon"
+                                                                  />
+                <com.jingoal.mobile.android.baseui.JVIEW_TextView android:textSize="11.0dip"
+                                                                  android:textColor="@color/job_gray"
+                                                                  android:id="@+id/hset_textview_account"
+                                                                  android:layout_width="fill_parent"
+                                                                  android:layout_marginLeft="12.0dip"
+                                                                  android:layout_marginTop="32.0dip"
+                                                                  android:text="gaolu@0211001" android:singleLine="true"
+                                                                  android:layout_toRightOf="@+id/hset_imageview_icon"
+                                                                  android:layout_alignBottom="@+id/hset_imageview_icon"
+                                                                  />
+                <ImageView android:background="#FF0000" android:layout_width="9.0dip" android:layout_height="15.0dip"
+                           android:layout_marginRight="4dp" android:layout_alignParentRight="true"
+                           android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="#00FF00" android:layout_width="fill_parent" android:layout_height="0.5dip"/>
+            <View android:background="#00FF00" android:layout_width="fill_parent" android:layout_height="0.5dip"
+                  android:layout_marginTop="4dp"/>
+            <RelativeLayout android:id="@+id/hset_rl_03" android:background="#0000FF" android:layout_height="50.0dip"
+                            android:layout_width="fill_parent">
+                <CheckBox android:id="@+id/hset_checkbox_muctip" android:focusable="false" android:clickable="false"
+                          android:layout_width="20.0dip" android:layout_height="20.0dip"
+                          android:layout_marginRight="4dp" android:layout_alignParentRight="true"
+                          android:layout_centerVertical="true" />
+                <ProgressBar android:id="@+id/hset_proccessbar_muctip" android:focusable="false"
+                             android:layout_height="wrap_content" android:layout_width="wrap_content"
+                             android:visibility="gone" android:layout_marginRight="4dp"
+                             android:layout_alignParentRight="true" android:layout_centerVertical="true"
+                             />
+                <com.jingoal.mobile.android.baseui.JVIEW_TextView android:textSize="17.0dip"
+                                                                  android:textColor="@color/black"
+                                                                  android:id="@+id/hset_textview_muctip"
+                                                                  android:layout_width="fill_parent"
+                                                                  android:layout_marginLeft="4dp"
+                                                                  android:text="@string/IDS_OTHER_00026"
+                                                                  android:singleLine="true"
+                                                                  android:layout_toLeftOf="@+id/hset_checkbox_muctip"
+                                                                  android:layout_alignParentLeft="true"
+                                                                  android:layout_centerVertical="true"
+                                                                  />
+            </RelativeLayout>
+            <View android:background="#00FF00" android:layout_width="fill_parent" android:layout_height="0.5dip"/>
+            <View android:background="#00FF00" android:layout_width="fill_parent" android:layout_height="0.5dip"
+                  android:layout_marginTop="4dp"/>
+            <RelativeLayout android:id="@+id/hset_rl_01" android:background="#0000FF" android:layout_height="50.0dip"
+                            android:layout_width="fill_parent">
+                <CheckBox android:id="@+id/hset_checkbox_sound" android:focusable="false" android:clickable="false"
+                          android:layout_width="20.0dip" android:layout_height="20.0dip"
+                          android:layout_marginRight="4dp" android:layout_alignParentRight="true"
+                          android:layout_centerVertical="true" />
+                <com.jingoal.mobile.android.baseui.JVIEW_TextView android:textSize="17.0dip"
+                                                                  android:textColor="@color/black"
+                                                                  android:id="@+id/hset_textview_sound"
+                                                                  android:layout_width="wrap_content"
+                                                                  android:layout_marginLeft="4dp"
+                                                                  android:text="@string/IDS_OTHER_00024"
+                                                                  android:singleLine="true"
+                                                                  android:layout_alignParentLeft="true"
+                                                                  android:layout_centerVertical="true"
+                                                                  />
+            </RelativeLayout>
+            <View android:background="#00FF00" android:layout_width="fill_parent" android:layout_height="0.5dip"
+                  android:layout_marginLeft="18.0dip" android:layout_marginRight="10.0dip"/>
+            <RelativeLayout android:id="@+id/hset_rl_02" android:background="#0000FF" android:layout_height="50.0dip"
+                            android:layout_width="fill_parent">
+                <CheckBox android:id="@+id/hset_checkbox_shake" android:focusable="false" android:clickable="false"
+                          android:layout_width="20.0dip" android:layout_height="20.0dip"
+                          android:layout_marginRight="4dp" android:layout_alignParentRight="true"
+                          android:layout_centerVertical="true" />
+                <com.jingoal.mobile.android.baseui.JVIEW_TextView android:textSize="17.0dip"
+                                                                  android:textColor="@color/black"
+                                                                  android:id="@+id/hset_textview_shake"
+                                                                  android:layout_width="fill_parent"
+                                                                  android:layout_marginLeft="4dp"
+                                                                  android:text="@string/IDS_OTHER_00025"
+                                                                  android:singleLine="true"
+                                                                  android:layout_toLeftOf="@+id/hset_checkbox_shake"
+                                                                  android:layout_alignParentLeft="true"
+                                                                  android:layout_centerVertical="true"
+                                                                  />
+            </RelativeLayout>
+            <View android:background="#00FF00" android:layout_width="fill_parent" android:layout_height="0.5dip"/>
+            <View android:background="#00FF00" android:layout_width="fill_parent" android:layout_height="0.5dip"
+                  android:layout_marginTop="4dp"/>
+            <RelativeLayout android:id="@+id/rl_message_roam" android:background="#0000FF"
+                            android:layout_height="50.0dip" android:layout_width="fill_parent">
+                <CheckBox android:id="@+id/hset_checkbox_roam" android:focusable="false" android:clickable="false"
+                          android:layout_width="20.0dip" android:layout_height="20.0dip"
+                          android:layout_marginRight="4dp" android:layout_alignParentRight="true"
+                          android:layout_centerVertical="true" />
+                <ProgressBar android:id="@+id/hset_proccessbar_roam" android:focusable="false" android:visibility="gone"
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:layout_marginRight="4dp" android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true" />
+                <com.jingoal.mobile.android.baseui.JVIEW_TextView android:textSize="17.0dip"
+                                                                  android:textColor="@color/black"
+                                                                  android:id="@+id/hset_textview_roam"
+                                                                  android:layout_width="fill_parent"
+                                                                  android:layout_marginLeft="4dp"
+                                                                  android:text="@string/IDS_PHOTO_0002"
+                                                                  android:singleLine="true"
+                                                                  android:layout_toLeftOf="@+id/hset_checkbox_roam"
+                                                                  android:layout_alignParentLeft="true"
+                                                                  android:layout_centerVertical="true"
+                                                                  />
+            </RelativeLayout>
+            <View android:background="#00FF00" android:visibility="gone" android:layout_width="fill_parent"
+                  android:layout_height="0.5dip"/>
+            <RelativeLayout android:id="@+id/hset_rl_05" android:background="#0000FF" android:layout_height="50.0dip"
+                            android:layout_width="fill_parent">
+                <com.jingoal.mobile.android.baseui.JVIEW_TextView android:textSize="17.0dip"
+                                                                  android:textColor="@color/black"
+                                                                  android:id="@+id/hset_textview_deltext"
+                                                                  android:layout_marginLeft="4dp"
+                                                                  android:layout_marginTop="3.0dip"
+                                                                  android:text="@string/IDS_OTHER_00156"
+                                                                  android:singleLine="true" />
+                <com.jingoal.mobile.android.baseui.JVIEW_TextView android:textSize="11.0dip"
+                                                                  android:textColor="@color/job_gray"
+                                                                  android:id="@+id/hset_textview_allsize"
+                                                                  android:layout_marginLeft="4dp"
+                                                                  android:layout_marginTop="28.0dip"
+                                                                  android:text="@string/IDS_OTHER_00156"
+                                                                  android:singleLine="true" />
+                <TextView android:textSize="15.0dip" android:textColor="#FFFFFF" android:gravity="center"
+                          android:id="@+id/hset_btn_delfile" android:layout_width="78.0dip"
+                          android:layout_height="28.0dip" android:layout_marginRight="4dp"
+                          android:text="text" android:layout_alignParentRight="true"
+                          android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="#00FF00" android:layout_width="fill_parent" android:layout_height="0.5dip"
+                  android:layout_marginLeft="18.0dip" android:layout_marginRight="5.0dip"/>
+            <RelativeLayout android:id="@+id/hset_rl_04" android:background="#0000FF" android:layout_height="50.0dip"
+                            android:layout_width="fill_parent">
+                <TextView android:textSize="15.0dip" android:textColor="#FFFFFF" android:gravity="center"
+                          android:id="@+id/hset_btn_delrecord" android:layout_width="78.0dip"
+                          android:layout_height="28.0dip" android:layout_marginRight="4dp"
+                          android:text="text" android:layout_alignParentRight="true"
+                          android:layout_centerVertical="true" />
+                <com.jingoal.mobile.android.baseui.JVIEW_TextView android:textSize="17.0dip"
+                                                                  android:textColor="@color/black"
+                                                                  android:id="@+id/hset_textview_clear"
+                                                                  android:layout_width="fill_parent"
+                                                                  android:layout_marginLeft="4dp"
+                                                                  android:text="@string/IDS_OTHER_00157"
+                                                                  android:singleLine="true"
+                                                                  android:layout_alignParentLeft="true"
+                                                                  android:layout_centerVertical="true"
+                                                                  />
+            </RelativeLayout>
+            <View android:background="#00FF00" android:layout_width="fill_parent" android:layout_height="0.5dip"/>
+            <View android:background="#00FF00" android:layout_width="fill_parent" android:layout_height="0.5dip"
+                  android:layout_marginTop="4dp"/>
+            <RelativeLayout android:id="@+id/hset_rl_language" android:background="#0000FF"
+                            android:layout_height="50.0dip" android:layout_width="fill_parent">
+                <com.jingoal.mobile.android.baseui.JVIEW_TextView android:textSize="17.0dip"
+                                                                  android:textColor="@color/black"
+                                                                  android:id="@+id/hset_textview_language"
+                                                                  android:focusable="false"
+                                                                  android:layout_width="fill_parent"
+                                                                  android:layout_marginLeft="4dp"
+                                                                  android:text="@string/IDS_OTHER_00031"
+                                                                  android:layout_alignParentLeft="true"
+                                                                  android:layout_centerVertical="true"
+                                                                  />
+                <ImageView android:background="#556677" android:layout_width="9.0dip" android:layout_height="15.0dip"
+                           android:layout_marginRight="4dp" android:layout_alignParentRight="true"
+                           android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/hset_rl_help" android:background="#0000FF" android:layout_height="50.0dip"
+                            android:layout_marginTop="20.0dip" android:layout_width="fill_parent">
+                <com.jingoal.mobile.android.baseui.JVIEW_TextView android:textSize="17.0dip"
+                                                                  android:textColor="@color/black"
+                                                                  android:id="@+id/hset_textview_help"
+                                                                  android:focusable="false"
+                                                                  android:layout_width="fill_parent"
+                                                                  android:layout_marginLeft="4dp"
+                                                                  android:text="@string/IDS_OTHER_00203"
+                                                                  android:layout_alignParentLeft="true"
+                                                                  android:layout_centerVertical="true"
+                                                                  />
+                <ImageView android:background="#556677" android:layout_width="9.0dip" android:layout_height="15.0dip"
+                           android:layout_marginRight="4dp" android:layout_alignParentRight="true"
+                           android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="#00FF00" android:layout_width="fill_parent" android:layout_height="0.5dip"
+                  android:layout_marginLeft="18.0dip" android:layout_marginRight="5.0dip"/>
+            <RelativeLayout android:id="@+id/hset_rl_07" android:background="#0000FF" android:layout_height="50.0dip"
+                            android:layout_width="fill_parent">
+                <com.jingoal.mobile.android.baseui.JVIEW_TextView android:textSize="17.0dip"
+                                                                  android:textColor="@color/black"
+                                                                  android:id="@+id/hset_textview_update"
+                                                                  android:focusable="false"
+                                                                  android:layout_width="fill_parent"
+                                                                  android:layout_marginLeft="4dp"
+                                                                  android:text="@string/IDS_OTHER_00032"
+                                                                  android:layout_alignParentLeft="true"
+                                                                  android:layout_centerVertical="true"
+                                                                  />
+                <com.jingoal.mobile.android.baseui.JVIEW_TextView android:textSize="10.0dip"
+                                                                  android:textColor="@color/white"
+                                                                  android:gravity="center"
+                                                                  android:id="@+id/hset_textview_new"
+                                                                  android:background="@drawable/new_bg"
+                                                                  android:focusable="false" android:visibility="gone"
+                                                                  android:layout_width="50.0dip"
+                                                                  android:layout_height="20.0dip"
+                                                                  android:layout_marginRight="32.0dip"
+                                                                  android:text="@string/IDS_OTHER_00125"
+                                                                  android:layout_toLeftOf="@+id/hset_imageview_arrow"
+                                                                  android:layout_alignParentRight="true"
+                                                                  android:layout_centerVertical="true"
+                                                                  />
+                <ImageView android:id="@+id/hset_imageview_arrow" android:background="#556677"
+                           android:layout_width="9.0dip" android:layout_height="15.0dip"
+                           android:layout_marginRight="4dp" android:layout_alignParentRight="true"
+                           android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="#00FF00" android:layout_width="fill_parent" android:layout_height="0.5dip"
+                  android:layout_marginLeft="18.0dip" android:layout_marginRight="5.0dip"/>
+            <RelativeLayout android:id="@+id/hset_rl_09" android:background="#0000FF" android:layout_height="50.0dip"
+                            android:layout_width="fill_parent">
+                <com.jingoal.mobile.android.baseui.JVIEW_TextView android:textSize="17.0dip"
+                                                                  android:textColor="@color/black"
+                                                                  android:id="@+id/hset_textview_back"
+                                                                  android:layout_width="fill_parent"
+                                                                  android:layout_marginLeft="4dp"
+                                                                  android:text="@string/IDS_OTHER_00176"
+                                                                  android:singleLine="true"
+                                                                  android:layout_alignParentLeft="true"
+                                                                  android:layout_centerVertical="true"
+                                                                  />
+                <ImageView android:background="#556677" android:layout_width="9.0dip" android:layout_height="15.0dip"
+                           android:layout_marginRight="4dp" android:layout_alignParentRight="true"
+                           android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="#00FF00" android:layout_width="fill_parent" android:layout_height="0.5dip"/>
+            <RelativeLayout android:id="@+id/hset_rl_product_dynamic" android:background="#0000FF"
+                            android:layout_height="50.0dip" android:layout_width="fill_parent">
+                <com.jingoal.mobile.android.baseui.JVIEW_TextView android:textSize="17.0dip"
+                                                                  android:textColor="@color/black"
+                                                                  android:id="@+id/hset_tv_product_dynamic"
+                                                                  android:layout_width="fill_parent"
+                                                                  android:layout_marginLeft="4dp"
+                                                                  android:text="@string/IDS_OTHER_00200"
+                                                                  android:singleLine="true"
+                                                                  android:layout_alignParentLeft="true"
+                                                                  android:layout_centerVertical="true"
+                                                                  />
+                <ImageView android:id="@+id/iv_setupdate" android:background="#556677" android:layout_width="9.0dip"
+                           android:layout_height="15.0dip" android:layout_marginRight="4dp"
+                           android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <com.jingoal.mobile.android.baseui.JVIEW_TextView android:textSize="@dimen/msg_unread_textSize"
+                                                                  android:textColor="@color/white"
+                                                                  android:id="@+id/hset_tv_unreadcount"
+                                                                  android:background="@drawable/unread_count_bg"
+                                                                  android:paddingLeft="@dimen/msg_unread_padding"
+                                                                  android:paddingRight="@dimen/msg_unread_padding"
+                                                                  android:visibility="visible"
+                                                                  android:layout_width="wrap_content"
+                                                                  android:layout_height="10.0dip"
+                                                                  android:layout_marginRight="10.0dip"
+                                                                  android:minWidth="10.0dip"
+                                                                  android:layout_toLeftOf="@+id/iv_setupdate"
+                                                                  android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <View android:background="#00FF00" android:layout_width="fill_parent" android:layout_height="0.5dip"/>
+            <RelativeLayout android:id="@+id/hset_rl_10" android:background="#0000FF" android:layout_height="50.0dip"
+                            android:layout_width="fill_parent">
+                <com.jingoal.mobile.android.baseui.JVIEW_TextView android:textSize="17.0dip"
+                                                                  android:textColor="@color/black"
+                                                                  android:id="@+id/hset_textview_recommend"
+                                                                  android:layout_width="fill_parent"
+                                                                  android:layout_marginLeft="4dp"
+                                                                  android:text="@string/IDS_ENC_0068"
+                                                                  android:singleLine="true"
+                                                                  android:layout_alignParentLeft="true"
+                                                                  android:layout_centerVertical="true"
+                                                                  />
+                <com.jingoal.mobile.android.baseui.JVIEW_TextView android:textSize="10.0dip"
+                                                                  android:textColor="@color/white"
+                                                                  android:gravity="center"
+                                                                  android:id="@+id/hset_textview_recommendflag"
+                                                                  android:background="@drawable/recommended_bg"
+                                                                  android:paddingLeft="@dimen/msg_unread_padding"
+                                                                  android:paddingRight="@dimen/msg_unread_padding"
+                                                                  android:paddingBottom="2.0dip"
+                                                                  android:focusable="false" android:visibility="gone"
+                                                                  android:layout_width="wrap_content"
+                                                                  android:layout_height="@dimen/msg_unread_width"
+                                                                  android:layout_marginRight="32.0dip"
+                                                                  android:text="@string/IDS_ENC_0084"
+                                                                  android:layout_toLeftOf="@+id/hetset_enc_arrow"
+                                                                  android:layout_alignParentRight="true"
+                                                                  android:layout_centerVertical="true"
+                                                                  />
+                <ImageView android:id="@+id/hetset_enc_arrow" android:background="#556677" android:layout_width="9.0dip"
+                           android:layout_height="15.0dip" android:layout_marginRight="4dp"
+                           android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="#00FF00" android:layout_width="fill_parent" android:layout_height="0.5dip"
+                  android:layout_marginLeft="18.0dip" android:layout_marginRight="5.0dip"/>
+            <RelativeLayout android:id="@+id/hset_rl_08" android:background="#0000FF" android:layout_height="50.0dip"
+                            android:layout_width="fill_parent">
+                <com.jingoal.mobile.android.baseui.JVIEW_TextView android:textSize="17.0dip"
+                                                                  android:textColor="@color/black"
+                                                                  android:id="@+id/hset_textview_about"
+                                                                  android:layout_width="fill_parent"
+                                                                  android:layout_marginLeft="4dp"
+                                                                  android:text="@string/IDS_OTHER_00007"
+                                                                  android:singleLine="true"
+                                                                  android:layout_alignParentLeft="true"
+                                                                  android:layout_centerVertical="true"
+                                                                  />
+                <ImageView android:background="#556677" android:layout_width="9.0dip" android:layout_height="15.0dip"
+                           android:layout_marginRight="4dp" android:layout_alignParentRight="true"
+                           android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="#00FF00" android:layout_width="fill_parent" android:layout_height="0.5dip"/>
+            <RelativeLayout android:id="@+id/hset_rl_exit" android:background="#0000FF" android:layout_height="50.0dip"
+                            android:layout_width="fill_parent">
+                <com.jingoal.mobile.android.baseui.JVIEW_TextView android:textSize="17.0dip"
+                                                                  android:textColor="@color/black"
+                                                                  android:id="@+id/hset_textview_exit"
+                                                                  android:layout_width="fill_parent"
+                                                                  android:layout_marginLeft="4dp"
+                                                                  android:text="@string/IDS_CONTACTS_0010"
+                                                                  android:singleLine="true"
+                                                                  android:layout_alignParentLeft="true"
+                                                                  android:layout_centerVertical="true"
+                                                                  />
+                <ImageView android:background="#556677" android:layout_width="9.0dip" android:layout_height="15.0dip"
+                           android:layout_marginRight="4dp" android:layout_alignParentRight="true"
+                           android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="#00FF00" android:layout_width="fill_parent" android:layout_height="0.5dip"
+                  android:layout_marginBottom="4dp"/>
+            <Button android:textSize="17.0dip" android:textColor="@color/white" android:id="@+id/hset_button_logout"
+                    android:background="#88562f" android:visibility="gone" android:layout_height="50.0dip"
+                    android:layout_marginLeft="4dp" android:layout_marginTop="4dp"
+                    android:layout_marginRight="4dp" android:layout_marginBottom="4dp"
+                    android:text="text" android:layout_width="fill_parent"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

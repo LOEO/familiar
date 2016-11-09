@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BaseTheme" parent="Theme.AppCompat.Light">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="textSize_14" parent="@style/wrapStyle">
+        <item name="android:textSize">14.0dip</item>
+    </style>
+
+    <style name="textSize_16" parent="@style/wrapStyle">
+        <item name="android:textSize">16.0dip</item>
+    </style>
+
+    <style name="CommonSearchboxHomeText">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ff999999</item>
+    </style>
+
+    <style name="wrapStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="progress_style">
+        <item name="android:layout_width">20.0dip</item>
+        <item name="android:layout_height">20.0dip</item>
+        <item name="android:indeterminateDrawable">@anim/loading_anim</item>
+    </style>
+    <style name="jingoal_checkboxStyle">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@drawable/jingoal_checkbox</item>
+    </style>
+
+    <style name="baseStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="widthfull" parent="@style/baseStyle">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CommonTopBarRightText">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="CommonTopBarMiddleText">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ff333333</item>
+    </style>
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal"
+                android:id="@+id/login_LinearLayout_top"
+                android:background="@drawable/jingoal_login_bg" style="@style/baseStyle"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:id="@+id/login_rl_page"
+                    style="@style/widthfull">
+        <ImageView android:id="@+id/login_ImageView_Logo" android:layout_width="148.0dip"
+                   android:layout_height="50.0dip"
+                   android:layout_marginTop="80.0dip" android:src="@drawable/logo"
+                   android:layout_centerHorizontal="true"/>
+        <RelativeLayout android:id="@+id/login_rl_inputAccountPw" android:background="@drawable/loginbg_top_shape"
+                        android:layout_height="wrap_content" android:layout_marginLeft="18.0dip"
+                        android:layout_marginTop="38.0dip" android:layout_marginRight="18.0dip"
+                        android:layout_below="@+id/login_ImageView_Logo" style="@style/widthfull">
+            <RelativeLayout android:id="@+id/login_rl_inputAccount" android:layout_height="43.0dip"
+                            style="@style/widthfull">
+                <TextView android:textSize="14.0dip"
+                          android:textColor="@color/edittext_normal"
+                          android:id="@+id/login_textView_account"
+                          android:layout_width="50.0dip"
+                          android:layout_marginLeft="13.0dip"
+                          android:text="@string/IDS_LOGIN_00002"
+                          android:singleLine="true"
+                          android:layout_alignLeft="@+id/login_editView_account"
+                          android:layout_centerVertical="true"
+                          style="@style/wrapStyle"/>
+                <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0px"
+                              android:layout_height="0.0px">
+                    <requestFocus/>
+                </LinearLayout>
+                <EditText android:textSize="14.0dip" android:textColor="@color/black"
+                          android:id="@+id/login_editView_account" android:background="#00000000"
+                          android:paddingLeft="57.0dip" android:paddingRight="59.0dip"
+                          android:focusableInTouchMode="true" android:scrollbars="none"
+                          android:layout_width="fill_parent" android:layout_height="40.0dip" android:singleLine="true"
+                          android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/login_ImageView_selAccount" android:background="@drawable/more_normal"
+                           android:layout_width="@dimen/login_ImageView_selAccount_wh"
+                           android:layout_height="@dimen/login_ImageView_selAccount_wh"
+                           android:layout_marginRight="13.0dip" android:layout_alignParentRight="true"
+                           android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/login_ImageView_clean_account"
+                           android:background="@drawable/cancel_selector"
+                           android:visibility="gone" android:layout_width="@dimen/login_ImageView_clean_account"
+                           android:layout_height="@dimen/login_ImageView_clean_account"
+                           android:layout_marginRight="38.0dip" android:layout_alignParentRight="true"
+                           android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <ImageView android:id="@+id/divider_img" android:background="#ffeaeaea" android:layout_height="0.5dip"
+                       android:layout_below="@+id/login_rl_inputAccount" style="@style/widthfull"/>
+            <RelativeLayout android:id="@+id/login_rl_inputPw" android:layout_height="43.0dip"
+                            android:layout_below="@+id/divider_img" style="@style/widthfull">
+                <TextView android:textSize="14.0dip"
+                          android:textColor="@color/edittext_normal"
+                          android:id="@+id/login_textView_pw"
+                          android:layout_width="50.0dip"
+                          android:layout_marginLeft="13.0dip"
+                          android:text="@string/IDS_LOGIN_00003"
+                          android:singleLine="true"
+                          android:layout_alignLeft="@+id/login_editView_pw"
+                          android:layout_centerVertical="true"
+                          style="@style/wrapStyle"/>
+                <EditText android:textSize="14.0dip" android:textColor="@color/black"
+                          android:id="@+id/login_editView_pw"
+                          android:background="#00000000" android:paddingLeft="57.0dip" android:paddingRight="59.0dip"
+                          android:focusableInTouchMode="true" android:scrollbars="none"
+                          android:layout_width="fill_parent" android:layout_height="40.0dip" android:password="true"
+                          android:singleLine="true" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/login_ImageView_clean_pwd" android:background="@drawable/cancel_selector"
+                           android:visibility="gone" android:layout_width="@dimen/login_ImageView_clean_account"
+                           android:layout_height="@dimen/login_ImageView_clean_account"
+                           android:layout_marginRight="13.0dip" android:layout_alignParentRight="true"
+                           android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <Button android:textSize="16.0dip" android:textColor="@color/white" android:id="@+id/Login_Button_login"
+                android:background="@drawable/login_bt_selecter" android:layout_height="45.5dip"
+                android:layout_marginLeft="18.0dip" android:layout_marginTop="20.0dip"
+                android:layout_marginRight="18.0dip" android:text="@string/IDS_LOGIN_00005"
+                android:layout_below="@+id/login_rl_inputAccountPw" style="@style/baseStyle"/>
+        <RelativeLayout android:id="@+id/login_rl_set" android:layout_marginLeft="18.0dip"
+                        android:layout_marginRight="18.0dip" android:layout_below="@+id/Login_Button_login"
+                        style="@style/widthfull">
+            <TextView android:textColor="@color/regist_txt" android:id="@+id/login_tv_register"
+                      android:layout_marginTop="18.0dip" android:text="@string/IDS_LOGIN_00024"
+                      style="@style/textSize_16"/>
+            <TextView android:textColor="@color/edittext_normal" android:id="@+id/login_tv_pwd"
+                      android:layout_marginTop="19.0dip" android:text="@string/IDS_PHOTO_0010"
+                      android:layout_alignParentRight="true" style="@style/textSize_14"/>
+        </RelativeLayout>
+        <RelativeLayout android:background="@drawable/loginbg_bottom_shape" android:layout_marginLeft="18.0dip"
+                        android:layout_marginTop="44.0dip" android:layout_marginRight="18.0dip"
+                        android:layout_alignTop="@+id/login_rl_inputAccountPw" style="@style/widthfull">
+            <ListView android:id="@+id/login_lv_accounts" android:visibility="gone" android:scrollbars="none"
+                      android:layout_marginLeft="0.5dip" android:layout_marginRight="0.5dip"
+                      android:cacheColorHint="#ffeaeaea" android:divider="#ffeaeaea" android:dividerHeight="0.5dip"
+                      style="@style/widthfull"/>
+            <ImageView android:background="@null" android:layout_height="0.5dip"
+                       android:layout_below="@+id/login_lv_accounts" style="@style/widthfull"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

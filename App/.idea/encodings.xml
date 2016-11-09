@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/libs/arm64-v8a" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/libs/arm64-v8a/liblocSDK6.so" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/libs/armeabi" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/libs/armeabi-v7a" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/libs/armeabi-v7a/liblocSDK6.so" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/libs/armeabi/liblocSDK6.so" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/libs/baidumapapi_v3_5_0.jar" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/libs/locSDK_6.03.jar" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/libs/x86" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/libs/x86/liblocSDK6.so" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/libs/x86_64" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/libs/x86_64/liblocSDK6.so" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/cn/tidylink/familiar/model/BDPoint.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/cn/tidylink/familiar/ui/activity/MainActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/cn/tidylink/familiar/ui/fragment/FriendFragment.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/cn/tidylink/familiar/util/EvilTransform.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/cn/tidylink/familiar/util/LocationUtils.java" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

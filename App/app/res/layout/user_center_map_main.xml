@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/common_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<include android:id="@+id/title_bar" layout="@layout/title_bar" />-->
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@+id/theme_map_list" android:background="@color/common_background" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@drawable/nav_list_divider_poi_search" android:dividerHeight="1.0dip" android:layout_below="@+id/divider" android:layout_alignParentBottom="true" android:headerDividersEnabled="false" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/user_no_fav_pic" android:background="@color/common_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@+id/user_no_fav_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/user_no_fav" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@+id/user_no_fav_text1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="获取数据失败" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff554d43" android:id="@+id/user_no_fav_text2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请检查您的网络状态后重新载入页面" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

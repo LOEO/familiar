@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<com.baidu.baidumaps.ugc.usercenter.custom.UserCenterImageView android:id="@+id/weather_condition" android:layout_width="22.0dip" android:layout_height="22.0dip" />
+-->    <TextView android:textSize="13.0dip" android:textColor="#ffffffff" android:id="@+id/weather_temp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" />
+    <TextView android:textSize="13.0dip" android:textColor="#ffffffff" android:id="@+id/weather_city" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" />
+    <View android:layout_gravity="center_vertical" android:id="@+id/weather_divider" android:background="#ffffffff" android:layout_width="0.5dip" android:layout_height="12.0dip" android:layout_marginLeft="10.0dip" />
+    <TextView android:textSize="13.0dip" android:textColor="#ffffffff" android:id="@+id/weather_pollution" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" android:drawableLeft="@drawable/icon_pm25" android:drawablePadding="5.0dip" />
+</LinearLayout>

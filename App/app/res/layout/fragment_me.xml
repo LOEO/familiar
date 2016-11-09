@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <!--    <include layout="@layout/user_center_header"/>-->
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+                android:fadingEdge="none" android:overScrollMode="never">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" style="@style/widthfull">
+            <View android:background="@color/driverline_color" android:layout_width="fill_parent"
+                  android:layout_height="0.5dip" android:layout_marginTop="@dimen/top_margin"/>
+            <RelativeLayout android:id="@+id/hset_rl_account"
+                            android:background="@drawable/worklog_set_listview_item_bg"
+                            android:layout_height="56.0dip" style="@style/widthfull">
+                <ImageView android:id="@+id/hset_imageview_icon" android:background="@drawable/loconline"
+                           android:layout_width="42.0dip" android:layout_height="42.0dip"
+                           android:layout_marginLeft="@dimen/comm_margin_left" android:layout_centerVertical="true"/>
+                <TextView android:textSize="17.0dip"
+                          android:textColor="@color/black"
+                          android:id="@+id/hset_textview_name"
+                          android:layout_width="wrap_content"
+                          android:layout_marginLeft="12.0dip"
+                          android:layout_marginTop="5.0dip" android:text="用户名"
+                          android:singleLine="true"
+                          android:layout_toRightOf="@+id/hset_imageview_icon"
+                          style="@style/wrapStyle"/>
+                <TextView android:textSize="11.0dip"
+                          android:textColor="@color/job_gray"
+                          android:id="@+id/hset_textview_account"
+                          android:layout_width="fill_parent"
+                          android:layout_marginLeft="12.0dip"
+                          android:layout_marginTop="32.0dip"
+                          android:text="gaolu@0211001" android:singleLine="true"
+                          android:layout_toRightOf="@+id/hset_imageview_icon"
+                          android:layout_alignBottom="@+id/hset_imageview_icon"
+                          style="@style/wrapStyle"/>
+                <ImageView android:background="@drawable/set_update" android:layout_width="9.0dip"
+                           android:layout_height="15.0dip" android:layout_marginRight="@dimen/comm_margin_left"
+                           android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="@color/driverline_color" android:layout_width="fill_parent"
+                  android:layout_height="0.5dip"/>
+            <View android:background="@color/driverline_color" android:layout_width="fill_parent"
+                  android:layout_height="0.5dip" android:layout_marginTop="@dimen/top_margin"/>
+            <RelativeLayout android:id="@+id/hset_rl_03" android:background="@drawable/worklog_set_listview_item_bg"
+                            android:layout_height="50.0dip" style="@style/widthfull">
+                <CheckBox android:id="@+id/hset_checkbox_muctip" android:focusable="false" android:clickable="false"
+                          android:layout_width="20.0dip" android:layout_height="20.0dip"
+                          android:layout_marginRight="@dimen/comm_margin_left" android:layout_alignParentRight="true"
+                          android:layout_centerVertical="true" style="@style/jingoal_checkboxStyle"/>
+                <ProgressBar android:id="@+id/hset_proccessbar_muctip" android:focusable="false"
+                             android:visibility="gone" android:layout_marginRight="@dimen/comm_margin_left"
+                             android:layout_alignParentRight="true" android:layout_centerVertical="true"
+                             style="@style/progress_style"/>
+                <TextView android:textSize="17.0dip"
+                          android:textColor="@color/black"
+                          android:id="@+id/hset_textview_muctip"
+                          android:layout_width="fill_parent"
+                          android:layout_marginLeft="@dimen/comm_margin_left"
+                          android:text="@string/IDS_OTHER_00026"
+                          android:singleLine="true"
+                          android:layout_toLeftOf="@+id/hset_checkbox_muctip"
+                          android:layout_alignParentLeft="true"
+                          android:layout_centerVertical="true"
+                          style="@style/wrapStyle"/>
+            </RelativeLayout>
+            <View android:background="@color/driverline_color" android:layout_width="fill_parent"
+                  android:layout_height="0.5dip"/>
+            <View android:background="@color/driverline_color" android:layout_width="fill_parent"
+                  android:layout_height="0.5dip" android:layout_marginTop="@dimen/top_margin"/>
+            <RelativeLayout android:id="@+id/hset_rl_01" android:background="@drawable/worklog_set_listview_item_bg"
+                            android:layout_height="50.0dip" style="@style/widthfull">
+                <CheckBox android:id="@+id/hset_checkbox_sound" android:focusable="false" android:clickable="false"
+                          android:layout_width="20.0dip" android:layout_height="20.0dip"
+                          android:layout_marginRight="@dimen/comm_margin_left" android:layout_alignParentRight="true"
+                          android:layout_centerVertical="true" style="@style/jingoal_checkboxStyle"/>
+                <TextView android:textSize="17.0dip"
+                          android:textColor="@color/black"
+                          android:id="@+id/hset_textview_sound"
+                          android:layout_width="wrap_content"
+                          android:layout_marginLeft="@dimen/comm_margin_left"
+                          android:text="@string/IDS_OTHER_00024"
+                          android:singleLine="true"
+                          android:layout_alignParentLeft="true"
+                          android:layout_centerVertical="true"
+                          style="@style/wrapStyle"/>
+            </RelativeLayout>
+            <View android:background="@color/driverline_color" android:layout_width="fill_parent"
+                  android:layout_height="0.5dip" android:layout_marginLeft="18.0dip"
+                  android:layout_marginRight="10.0dip"/>
+            <RelativeLayout android:id="@+id/hset_rl_02" android:background="@drawable/worklog_set_listview_item_bg"
+                            android:layout_height="50.0dip" style="@style/widthfull">
+                <CheckBox android:id="@+id/hset_checkbox_shake" android:focusable="false" android:clickable="false"
+                          android:layout_width="20.0dip" android:layout_height="20.0dip"
+                          android:layout_marginRight="@dimen/comm_margin_left" android:layout_alignParentRight="true"
+                          android:layout_centerVertical="true" style="@style/jingoal_checkboxStyle"/>
+                <TextView android:textSize="17.0dip"
+                          android:textColor="@color/black"
+                          android:id="@+id/hset_textview_shake"
+                          android:layout_width="fill_parent"
+                          android:layout_marginLeft="@dimen/comm_margin_left"
+                          android:text="@string/IDS_OTHER_00025"
+                          android:singleLine="true"
+                          android:layout_toLeftOf="@+id/hset_checkbox_shake"
+                          android:layout_alignParentLeft="true"
+                          android:layout_centerVertical="true"
+                          style="@style/wrapStyle"/>
+            </RelativeLayout>
+            <View android:background="@color/driverline_color" android:layout_width="fill_parent"
+                  android:layout_height="0.5dip"/>
+            <View android:background="@color/driverline_color" android:layout_width="fill_parent"
+                  android:layout_height="0.5dip" android:layout_marginTop="@dimen/top_margin"/>
+            <RelativeLayout android:id="@+id/rl_message_roam"
+                            android:background="@drawable/worklog_set_listview_item_bg"
+                            android:layout_height="50.0dip" style="@style/widthfull">
+                <CheckBox android:id="@+id/hset_checkbox_roam" android:focusable="false" android:clickable="false"
+                          android:layout_width="20.0dip" android:layout_height="20.0dip"
+                          android:layout_marginRight="@dimen/comm_margin_left" android:layout_alignParentRight="true"
+                          android:layout_centerVertical="true" style="@style/jingoal_checkboxStyle"/>
+                <ProgressBar android:id="@+id/hset_proccessbar_roam" android:focusable="false" android:visibility="gone"
+                             android:layout_marginRight="@dimen/comm_margin_left" android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true" style="@style/progress_style"/>
+                <TextView android:textSize="17.0dip"
+                          android:textColor="@color/black"
+                          android:id="@+id/hset_textview_roam"
+                          android:layout_width="fill_parent"
+                          android:layout_marginLeft="@dimen/comm_margin_left"
+                          android:text="@string/IDS_PHOTO_0002"
+                          android:singleLine="true"
+                          android:layout_toLeftOf="@+id/hset_checkbox_roam"
+                          android:layout_alignParentLeft="true"
+                          android:layout_centerVertical="true"
+                          style="@style/wrapStyle"/>
+            </RelativeLayout>
+            <View android:background="@color/driverline_color" android:visibility="gone"
+                  android:layout_width="fill_parent" android:layout_height="0.5dip"/>
+            <RelativeLayout android:id="@+id/hset_rl_05" android:background="@drawable/worklog_set_listview_item_bg"
+                            android:layout_height="50.0dip" style="@style/widthfull">
+                <TextView android:textSize="17.0dip"
+                          android:textColor="@color/black"
+                          android:id="@+id/hset_textview_deltext"
+                          android:layout_marginLeft="@dimen/comm_margin_left"
+                          android:layout_marginTop="3.0dip"
+                          android:text="@string/IDS_OTHER_00156"
+                          android:singleLine="true" style="@style/wrapStyle"/>
+                <TextView android:textSize="11.0dip"
+                          android:textColor="@color/job_gray"
+                          android:id="@+id/hset_textview_allsize"
+                          android:layout_marginLeft="@dimen/comm_margin_left"
+                          android:layout_marginTop="28.0dip"
+                          android:text="@string/IDS_OTHER_00156"
+                          android:singleLine="true" style="@style/wrapStyle"/>
+                <TextView android:textSize="15.0dip" android:textColor="@color/highset_tv_color"
+                          android:gravity="center" android:id="@+id/hset_btn_delfile" android:layout_width="78.0dip"
+                          android:layout_height="28.0dip" android:layout_marginRight="@dimen/comm_margin_left"
+                          android:text="@string/IDS_OTHER_00171" android:layout_alignParentRight="true"
+                          android:layout_centerVertical="true" style="@style/wrapStyle"/>
+            </RelativeLayout>
+            <View android:background="@color/driverline_color" android:layout_width="fill_parent"
+                  android:layout_height="0.5dip" android:layout_marginLeft="18.0dip"
+                  android:layout_marginRight="5.0dip"/>
+            <RelativeLayout android:id="@+id/hset_rl_04" android:background="@drawable/worklog_set_listview_item_bg"
+                            android:layout_height="50.0dip" style="@style/widthfull">
+                <TextView android:textSize="15.0dip" android:textColor="@color/highset_tv_color"
+                          android:gravity="center" android:id="@+id/hset_btn_delrecord" android:layout_width="78.0dip"
+                          android:layout_height="28.0dip" android:layout_marginRight="@dimen/comm_margin_left"
+                          android:text="@string/IDS_OTHER_00172" android:layout_alignParentRight="true"
+                          android:layout_centerVertical="true" style="@style/wrapStyle"/>
+                <TextView android:textSize="17.0dip"
+                          android:textColor="@color/black"
+                          android:id="@+id/hset_textview_clear"
+                          android:layout_width="fill_parent"
+                          android:layout_marginLeft="@dimen/comm_margin_left"
+                          android:text="@string/IDS_OTHER_00157"
+                          android:singleLine="true"
+                          android:layout_alignParentLeft="true"
+                          android:layout_centerVertical="true"
+                          style="@style/wrapStyle"/>
+            </RelativeLayout>
+            <View android:background="@color/driverline_color" android:layout_width="fill_parent"
+                  android:layout_height="0.5dip"/>
+            <View android:background="@color/driverline_color" android:layout_width="fill_parent"
+                  android:layout_height="0.5dip" android:layout_marginTop="@dimen/top_margin"/>
+            <RelativeLayout android:id="@+id/hset_rl_language"
+                            android:background="@drawable/worklog_set_listview_item_bg" android:layout_height="50.0dip"
+                            style="@style/widthfull">
+                <TextView android:textSize="17.0dip"
+                          android:textColor="@color/black"
+                          android:id="@+id/hset_textview_language"
+                          android:focusable="false"
+                          android:layout_width="fill_parent"
+                          android:layout_marginLeft="@dimen/comm_margin_left"
+                          android:text="@string/IDS_OTHER_00031"
+                          android:layout_alignParentLeft="true"
+                          android:layout_centerVertical="true"
+                          style="@style/wrapStyle"/>
+                <ImageView android:background="@drawable/set_update" android:layout_width="9.0dip"
+                           android:layout_height="15.0dip" android:layout_marginRight="@dimen/comm_margin_left"
+                           android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/hset_rl_help" android:background="@drawable/worklog_set_listview_item_bg"
+                            android:layout_height="50.0dip" android:layout_marginTop="8.0dip" style="@style/widthfull">
+                <TextView android:textSize="17.0dip"
+                          android:textColor="@color/black"
+                          android:id="@+id/hset_textview_help"
+                          android:focusable="false"
+                          android:layout_width="fill_parent"
+                          android:layout_marginLeft="@dimen/comm_margin_left"
+                          android:text="@string/IDS_OTHER_00203"
+                          android:layout_alignParentLeft="true"
+                          android:layout_centerVertical="true"
+                          style="@style/wrapStyle"/>
+                <ImageView android:background="@drawable/set_update" android:layout_width="9.0dip"
+                           android:layout_height="15.0dip" android:layout_marginRight="@dimen/comm_margin_left"
+                           android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="@color/driverline_color" android:layout_width="fill_parent"
+                  android:layout_height="0.5dip" android:layout_marginLeft="18.0dip"
+                  android:layout_marginRight="5.0dip"/>
+            <RelativeLayout android:id="@+id/hset_rl_07" android:background="@drawable/worklog_set_listview_item_bg"
+                            android:layout_height="50.0dip" style="@style/widthfull">
+                <TextView android:textSize="17.0dip"
+                          android:textColor="@color/black"
+                          android:id="@+id/hset_textview_update"
+                          android:focusable="false"
+                          android:layout_width="fill_parent"
+                          android:layout_marginLeft="@dimen/comm_margin_left"
+                          android:text="@string/IDS_OTHER_00032"
+                          android:layout_alignParentLeft="true"
+                          android:layout_centerVertical="true"
+                          style="@style/wrapStyle"/>
+                <TextView android:textSize="10.0dip"
+                          android:textColor="@color/white"
+                          android:gravity="center"
+                          android:id="@+id/hset_textview_new"
+                          android:background="@drawable/new_bg"
+                          android:focusable="false" android:visibility="gone"
+                          android:layout_width="50.0dip"
+                          android:layout_height="20.0dip"
+                          android:layout_marginRight="32.0dip"
+                          android:text="@string/IDS_OTHER_00125"
+                          android:layout_toLeftOf="@+id/hset_imageview_arrow"
+                          android:layout_alignParentRight="true"
+                          android:layout_centerVertical="true"
+                          style="@style/wrapStyle"/>
+                <ImageView android:id="@+id/hset_imageview_arrow" android:background="@drawable/set_update"
+                           android:layout_width="9.0dip" android:layout_height="15.0dip"
+                           android:layout_marginRight="@dimen/comm_margin_left" android:layout_alignParentRight="true"
+                           android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="@color/driverline_color" android:layout_width="fill_parent"
+                  android:layout_height="0.5dip" android:layout_marginLeft="18.0dip"
+                  android:layout_marginRight="5.0dip"/>
+            <RelativeLayout android:id="@+id/hset_rl_09" android:background="@drawable/worklog_set_listview_item_bg"
+                            android:layout_height="50.0dip" style="@style/widthfull">
+                <TextView android:textSize="17.0dip"
+                          android:textColor="@color/black"
+                          android:id="@+id/hset_textview_back"
+                          android:layout_width="fill_parent"
+                          android:layout_marginLeft="@dimen/comm_margin_left"
+                          android:text="@string/IDS_OTHER_00176"
+                          android:singleLine="true"
+                          android:layout_alignParentLeft="true"
+                          android:layout_centerVertical="true"
+                          style="@style/wrapStyle"/>
+                <ImageView android:background="@drawable/set_update" android:layout_width="9.0dip"
+                           android:layout_height="15.0dip" android:layout_marginRight="@dimen/comm_margin_left"
+                           android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="@color/driverline_color" android:layout_width="fill_parent"
+                  android:layout_height="0.5dip"/>
+            <RelativeLayout android:id="@+id/hset_rl_product_dynamic"
+                            android:background="@drawable/worklog_set_listview_item_bg" android:layout_height="50.0dip"
+                            style="@style/widthfull">
+                <TextView android:textSize="17.0dip"
+                          android:textColor="@color/black"
+                          android:id="@+id/hset_tv_product_dynamic"
+                          android:layout_width="fill_parent"
+                          android:layout_marginLeft="@dimen/comm_margin_left"
+                          android:text="@string/IDS_OTHER_00200"
+                          android:singleLine="true"
+                          android:layout_alignParentLeft="true"
+                          android:layout_centerVertical="true"
+                          style="@style/wrapStyle"/>
+                <ImageView android:id="@+id/iv_setupdate" android:background="@drawable/set_update"
+                           android:layout_width="9.0dip" android:layout_height="15.0dip"
+                           android:layout_marginRight="@dimen/comm_margin_left" android:layout_alignParentRight="true"
+                           android:layout_centerVertical="true"/>
+                <TextView android:textSize="@dimen/msg_unread_textSize"
+                          android:textColor="@color/white"
+                          android:id="@+id/hset_tv_unreadcount"
+                          android:background="@drawable/unread_count_bg"
+                          android:paddingLeft="@dimen/msg_unread_padding"
+                          android:paddingRight="@dimen/msg_unread_padding"
+                          android:visibility="visible"
+                          android:layout_width="wrap_content"
+                          android:layout_height="10.0dip"
+                          android:layout_marginRight="10.0dip"
+                          android:minWidth="10.0dip"
+                          android:layout_toLeftOf="@+id/iv_setupdate"
+                          android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <View android:background="@color/driverline_color" android:layout_width="fill_parent"
+                  android:layout_height="0.5dip"/>
+            <RelativeLayout android:id="@+id/hset_rl_10" android:background="@drawable/worklog_set_listview_item_bg"
+                            android:layout_height="50.0dip" style="@style/widthfull">
+                <TextView android:textSize="17.0dip"
+                          android:textColor="@color/black"
+                          android:id="@+id/hset_textview_recommend"
+                          android:layout_width="fill_parent"
+                          android:layout_marginLeft="@dimen/comm_margin_left"
+                          android:text="@string/IDS_ENC_0068"
+                          android:singleLine="true"
+                          android:layout_alignParentLeft="true"
+                          android:layout_centerVertical="true"
+                          style="@style/wrapStyle"/>
+                <TextView android:textSize="10.0dip"
+                          android:textColor="@color/white"
+                          android:gravity="center"
+                          android:id="@+id/hset_textview_recommendflag"
+                          android:background="@drawable/recommended_bg"
+                          android:paddingLeft="@dimen/msg_unread_padding"
+                          android:paddingRight="@dimen/msg_unread_padding"
+                          android:paddingBottom="2.0dip"
+                          android:focusable="false" android:visibility="gone"
+                          android:layout_width="wrap_content"
+                          android:layout_height="@dimen/msg_unread_width"
+                          android:layout_marginRight="32.0dip"
+                          android:text="@string/IDS_ENC_0084"
+                          android:layout_toLeftOf="@+id/hetset_enc_arrow"
+                          android:layout_alignParentRight="true"
+                          android:layout_centerVertical="true"
+                          style="@style/wrapStyle"/>
+                <ImageView android:id="@+id/hetset_enc_arrow" android:background="@drawable/set_update"
+                           android:layout_width="9.0dip" android:layout_height="15.0dip"
+                           android:layout_marginRight="@dimen/comm_margin_left" android:layout_alignParentRight="true"
+                           android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="@color/driverline_color" android:layout_width="fill_parent"
+                  android:layout_height="0.5dip" android:layout_marginLeft="18.0dip"
+                  android:layout_marginRight="5.0dip"/>
+            <RelativeLayout android:id="@+id/hset_rl_08" android:background="@drawable/worklog_set_listview_item_bg"
+                            android:layout_height="50.0dip" style="@style/widthfull">
+                <TextView android:textSize="17.0dip"
+                          android:textColor="@color/black"
+                          android:id="@+id/hset_textview_about"
+                          android:layout_width="fill_parent"
+                          android:layout_marginLeft="@dimen/comm_margin_left"
+                          android:text="@string/IDS_OTHER_00007"
+                          android:singleLine="true"
+                          android:layout_alignParentLeft="true"
+                          android:layout_centerVertical="true"
+                          style="@style/wrapStyle"/>
+                <ImageView android:background="@drawable/set_update" android:layout_width="9.0dip"
+                           android:layout_height="15.0dip" android:layout_marginRight="@dimen/comm_margin_left"
+                           android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="@color/driverline_color" android:layout_width="fill_parent"
+                  android:layout_height="0.5dip"/>
+            <RelativeLayout android:id="@+id/hset_rl_exit" android:background="@drawable/worklog_set_listview_item_bg"
+                            android:layout_height="50.0dip" style="@style/widthfull">
+                <TextView android:textSize="17.0dip"
+                          android:textColor="@color/black"
+                          android:id="@+id/hset_textview_exit"
+                          android:layout_width="fill_parent"
+                          android:layout_marginLeft="@dimen/comm_margin_left"
+                          android:text="@string/IDS_CONTACTS_0010"
+                          android:singleLine="true"
+                          android:layout_alignParentLeft="true"
+                          android:layout_centerVertical="true"
+                          style="@style/wrapStyle"/>
+                <ImageView android:background="@drawable/set_update" android:layout_width="9.0dip"
+                           android:layout_height="15.0dip" android:layout_marginRight="@dimen/comm_margin_left"
+                           android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="@color/driverline_color" android:layout_width="fill_parent"
+                  android:layout_height="0.5dip" android:layout_marginBottom="@dimen/top_margin"/>
+            <Button android:textSize="17.0dip" android:textColor="@color/white" android:id="@+id/hset_button_logout"
+                    android:background="@drawable/hset_logout_selector" android:visibility="gone"
+                    android:layout_height="50.0dip" android:layout_marginLeft="@dimen/comm_margin_left"
+                    android:layout_marginTop="@dimen/item_margin" android:layout_marginRight="@dimen/comm_margin_left"
+                    android:layout_marginBottom="@dimen/top_margin" android:text="@string/IDS_OTHER_00016"
+                    style="@style/widthfull"/>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
